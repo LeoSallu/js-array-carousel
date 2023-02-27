@@ -1,0 +1,64 @@
+/*
+RESET
+*/
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+/*
+COMMON
+*/
+body{
+    background-color: bisque;
+}
+/*
+CAROSELLO
+*/
+.container{
+    background-color: cadetblue;
+    max-width: 900px;
+    height: 100vh;
+    margin: 0 auto;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousel{
+    background-color: aqua;
+    width: 700px;
+    height: 300px;
+    position: relative; 
+}
+.top, .bot{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+    background-color: gray;
+    border: 1px solid gray;
+    border-radius: 50%;
+    padding: .4375rem;
+    z-index: 2;
+    cursor: pointer;
+    font-size: 15px;
+}
+.top{
+    top: 20px;
+}
+.bot{
+    bottom: 20px;
+}
+            /* IMG  */
+.item{
+    height: 100%;
+    display: none;
+}
+.carousel .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.show{
+    display: block;
+}
