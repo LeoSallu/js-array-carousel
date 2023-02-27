@@ -1,14 +1,9 @@
 Consegna:
 Dato un array contenente una lista di cinque immagini, creare un carosello come nello screenshot allegato.
-MILESTONE 3
-Al click dell’utente sulle frecce, il programma cambierà l’immagine attiva, che quindi verrà visualizzata al posto della precedente.
-
-
-
 
                         MILESTONE 1 
 Impostare il codice html e css per creare un layout del carosello in versione statica, sfruttando le proprietà css per centrare i nostri elementi, poi dedicarsi tramite ai poisition alla centratura della img visibile e infine sempre tramite posizionamenti assoluti inserite le due chevron up e bot per far scorrere le img successivamente con js.
-    
+
                         MILESTONE 2  
 Rimossi dal HTML le img, impostato il file javascript iniziando dalla formulazione delle costanti e variabili con annesso l'array contenente le img.
 Impostato un ciclo For che farà scorrere le nostre immagini al click sul chevron ma di cui ce ne occuperemo dopo. Tornando al ciclo tramite l'interpolazione creiamo un sistema più efficiente che inserisca l'img direttamente dall'indice del Array nel HTML.
