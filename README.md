@@ -1,36 +1,24 @@
 Consegna:
 Dato un array contenente una lista di cinque immagini, creare un carosello come nello screenshot allegato.
-MILESTONE 1
-Per prima cosa, creiamo il markup statico: costruiamo il container e inseriamo un’immagine grande al centro: avremo così la struttura base e gli stili pronti per poterci poi concentrare solamente sull’aspetto logico.
-MILESTONE 2
-Adesso rimuoviamo tutto il markup statico e inseriamo tutte le immagini dinamicamente servendoci dell’array fornito e un semplice ciclo for che concatena un template literal.
-Tutte le immagini saranno nascoste, tranne la prima, che avrà una classe specifica che la renderà visibile.
-Al termine di questa fase ci ritroveremo con lo stesso slider stilato nella milestone 1, ma costruito dinamicamente attraverso JavaScript.
 MILESTONE 3
 Al click dell’utente sulle frecce, il programma cambierà l’immagine attiva, che quindi verrà visualizzata al posto della precedente.
 
 
 
 
--STEP 1:
-Impostare il codice html e css per creare un layout del carosello in versione statica. 
--STEP 2:
-Iniziare la programmazione Javascript partendo dal'impostazione delle costanti e variabili.
--STEP 3:
-Iniziare a costruire gli array contenenti le img che saranno tutte provviste di classe css display none per evitare che siano visualizzabili.
--STEP 4:
-Strutturare un ciclo for che dovrà tramite un evento del click del FA andare a aggiungere una classe show all'immagine con indice successivo e rimuovere contemporaneamente la classe hidden.
--STEP 5:
-Sperare che funzioni se no rivedere il codice.
+                        MILESTONE 1 
+Impostare il codice html e css per creare un layout del carosello in versione statica, sfruttando le proprietà css per centrare i nostri elementi, poi dedicarsi tramite ai poisition alla centratura della img visibile e infine sempre tramite posizionamenti assoluti inserite le due chevron up e bot per far scorrere le img successivamente con js.
+    
+                        MILESTONE 2  
+Rimossi dal HTML le img, impostato il file javascript iniziando dalla formulazione delle costanti e variabili con annesso l'array contenente le img.
+Impostato un ciclo For che farà scorrere le nostre immagini al click sul chevron ma di cui ce ne occuperemo dopo. Tornando al ciclo tramite l'interpolazione creiamo un sistema più efficiente che inserisca l'img direttamente dall'indice del Array nel HTML.
+Il sistema sarà basato su le costanti che mi sono impostato che tramite un querySelector vadano a prima di tutto a prendere dal HTML i due chevron e infine una costante che vada a selezionare l'item generato all'interno del ciclo For.
+                        MILESTONE 3
+Infine come ultimo Milestone per far si che al nostro click sulle due chevron la foto passi alla successiva ci impostiamo due eventi separati per ambedue i chevron che al nostro click faranno due azioni differenti. 
+Il primo andrà ad aggiungere al nostro elemento un numero[indice] ogni volta che andremo a cliccare su di esso per un massimo del numero totale del'indice - 1 perchè da consegna una volta giunti all'ultima img non possiamo procedere ad una successiva perchè terminata la nostra galleria.
+Inoltre questo somma dell'indice si interpone fra la rimozione della classe show alla foto corrente (Per far visualizzare l'img) e l'aggiunta della classe all'img successiva per non far comparire più img contemporaneamente. Processo inverso per quanto riguardo il calcolo dell'indice del chevron bot che andrà a sottrarre ad ogni nostro click piuttosto che aggiungere per tornare cosi all'img precedente e cosi termina l'esercizio.
 
 
 
 
-
-
-            <div class="item show"><img src="img/01.webp" alt="spiderman"></div>
-            <div class="item"><img src="img/02.webp" alt="ratchet & clank"></div>
-            <div class="item"><img src="img/03.webp" alt="fortnite"></div>
-            <div class="item"><img src="img/04.webp" alt="stray"></div>
-            <div class="item"><img src="img/05.webp" alt="marvel"></div>
 
