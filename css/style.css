@@ -1,23 +1,17 @@
-/*
-RESET
-*/
+            /* RESET */
 *{
 padding: 0;
 margin: 0;
 box-sizing: border-box;
 }
 /*
-COMMON
-*/
-body{
-    background-color: bisque;
-}
-/*
 CAROSELLO
 */
+body{
+    background-color: orangered;
+}
 .container{
-    background-color: cadetblue;
-    max-width: 900px;
+    max-width: 1200px;
     height: 100vh;
     margin: 0 auto;   
     display: flex;
@@ -25,24 +19,23 @@ CAROSELLO
     align-items: center;
 }
 .carousel{
-    background-color: aqua;
-    width: 700px;
-    height: 300px;
+    width: 800px;
+    height: 450px;
     position: relative; 
 }
-.top, .bot{
+.up, .bot{
     position: absolute;
     left: 50%;
     transform: translate(-50%,0);
     background-color: gray;
     border: 1px solid gray;
-    border-radius: 50%;
+    border-radius: 45%;
     padding: .4375rem;
     z-index: 2;
     cursor: pointer;
     font-size: 15px;
 }
-.top{
+.up{
     top: 20px;
 }
 .bot{
@@ -56,7 +49,7 @@ CAROSELLO
 .carousel .item img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit:cover;
     
 }
 .show{

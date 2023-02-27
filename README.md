@@ -22,3 +22,15 @@ Iniziare a costruire gli array contenenti le img che saranno tutte provviste di 
 Strutturare un ciclo for che dovrà tramite un evento del click del FA andare a aggiungere una classe show all'immagine con indice successivo e rimuovere contemporaneamente la classe hidden.
 -STEP 5:
 Sperare che funzioni se no rivedere il codice.
+
+
+
+
+
+
+            <div class="item show"><img src="img/01.webp" alt="spiderman"></div>
+            <div class="item"><img src="img/02.webp" alt="ratchet & clank"></div>
+            <div class="item"><img src="img/03.webp" alt="fortnite"></div>
+            <div class="item"><img src="img/04.webp" alt="stray"></div>
+            <div class="item"><img src="img/05.webp" alt="marvel"></div>
+
